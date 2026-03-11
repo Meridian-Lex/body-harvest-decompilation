@@ -1,3 +1,4 @@
+/* ci-test: build-check workflow verification */
 #include <ultra64.h>
 #include "common.h"
 
