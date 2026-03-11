@@ -26,8 +26,10 @@ jobs:
       - name: Restore IDO tool permissions
         run: chmod +x tools/ido5.3_recomp/*
 
-      - name: Build IDO tools
-        run: make tools
+      - name: Build IDO tools and create build directories
+        run: |
+          make tools
+          make dirs
 
       - name: Find changed C source files
         id: changed
